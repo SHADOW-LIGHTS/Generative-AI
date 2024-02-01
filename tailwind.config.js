@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -57,20 +57,94 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+        blobright: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1) rotate(0deg)",
+          },
+          "10%": {
+            transform: "translate(10px, -10px) scale(1.1) rotate(5deg)",
+            animationTimingFunction: "ease-in",
+          },
+          "20%": {
+            transform: "translate(20px, -30px) scale(1.2) rotate(10deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "28%": {
+            transform: "translate(30px, -40px) scale(1.4) rotate(20deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "40%": {
+            transform: "translate(40px, -50px) scale(1.8) rotate(45deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "50%": {
+            transform: "translate(30px, -30px) scale(1.3) rotate(40deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "70%": {
+            transform: "translate(25px, -30px) scale(1.1) rotate(50deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "80%": {
+            transform: "translate(-10px, 10px) scale(0.9) rotate(55deg)",
+            animationTimingFunction: "ease-out",
+          },
+          "90%": {
+            transform: "translate(-20px, 20px) scale(0.8) rotate(60deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1) rotate(0deg)",
+          },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+        blobleft: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1) rotate(0deg)",
+          },
+          "10%": {
+            transform: "translate(-10px, 10px) scale(1.1) rotate(5deg)",
+            animationTimingFunction: "ease-in",
+          },
+          "20%": {
+            transform: "translate(-30px, -20px) scale(1.2) rotate(10deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "28%": {
+            transform: "translate(-40px, 30px) scale(1.4) rotate(20deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "40%": {
+            transform: "translate(-50px, 40px) scale(1.8) rotate(45deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "50%": {
+            transform: "translate(-30px, 30px) scale(1.3) rotate(40deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "70%": {
+            transform: "translate(30px, -25px) scale(1.1) rotate(50deg)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "80%": {
+            transform: "translate(20px, -10px) scale(0.9) rotate(55deg)",
+            animationTimingFunction: "ease-out",
+          },
+          "90%": {
+            transform: "translate(20px, -20px) scale(0.8) rotate(60deg)",
+            animationTimingFunction: "cubic-bezier(0.5, 0, 0.5, 1)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1) rotate(0deg)",
+          },
         },
       },
       animation: {
+        blobright: "blobright 30s infinite",
+        blobleft: "blobleft 30s infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

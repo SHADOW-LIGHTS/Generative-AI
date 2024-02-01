@@ -11,8 +11,8 @@ export const FreeCounter = ({
   isPro = false,
   apiLimitCount = 0,
 }: {
-  isPro: boolean,
-  apiLimitCount: number
+  isPro: boolean;
+  apiLimitCount: number;
 }) => {
   const [mounted, setMounted] = useState(false);
   const proModal = useProModal();
@@ -24,7 +24,6 @@ export const FreeCounter = ({
   if (!mounted) {
     return null;
   }
-  
 
   if (isPro) {
     return null;
@@ -32,20 +31,27 @@ export const FreeCounter = ({
 
   return (
     <div className="px-3">
-      <Card className="bg-white/10 border-0">
-        <CardContent className="py-6">
+      <Card className="bg-white/20 border-0">
+        <CardContent className="py-3">
           <div className="text-center text-sm text-white mb-4 space-y-2">
             <p>
               {apiLimitCount} / {MAX_FREE_COUNTS} Free Generations
             </p>
-            <Progress className="h-3" value={(apiLimitCount / MAX_FREE_COUNTS) * 100} />
+            <Progress
+              className="h-3"
+              value={(apiLimitCount / MAX_FREE_COUNTS) * 100}
+            />
           </div>
-          <Button onClick={proModal.onOpen} variant="premium" className="w-full">
-            Upgrade
+          <Button
+            onClick={proModal.onOpen}
+            variant="premium"
+            className="w-full"
+          >
+            Upgrade to Pro
             <Zap className="w-4 h-4 ml-2 fill-white" />
           </Button>
         </CardContent>
       </Card>
     </div>
-  )
-}
+  );
+};

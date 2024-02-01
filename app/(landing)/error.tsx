@@ -1,11 +1,9 @@
 "use client";
 
-import { Empty } from "@/components/ui/empty";
+import { Errr } from "@/components/ui/empty";
 
 const Error = () => {
-  return ( 
-    <Empty label="Something went wrong." />
-   );
-}
- 
+  return <Errr label="Something went wrong." />;
+};
+
 export default Error;

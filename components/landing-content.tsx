@@ -53,6 +53,8 @@ export const LandingContent = () => {
                 <div>
                   <Image
                     className="inline-block h-[2.875rem] w-[2.875rem] rounded-full"
+                    width={100}
+                    height={100}
                     src={item.avatar}
                     alt="Image Description"
                   />

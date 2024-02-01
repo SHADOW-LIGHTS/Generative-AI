@@ -1,24 +1,25 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { ClerkProvider } from '@clerk/nextjs'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
 
-import { ToasterProvider } from '@/components/toaster-provider'
-import { ModalProvider } from '@/components/modal-provider'
-import { CrispProvider } from '@/components/crisp-provider'
+import { ToasterProvider } from "@/components/toaster-provider";
+import { ModalProvider } from "@/components/modal-provider";
+import { CrispProvider } from "@/components/crisp-provider";
 
-import './globals.css'
+import "./globals.css";
 
-const font = Inter({ subsets: ['latin'] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Genius',
-  description: 'AI Platform',
-}
+  title: "Genius",
+  description: "AI Platform",
+  icons: "./icon.ico",
+};
 
 export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <ClerkProvider>
@@ -31,5 +32,5 @@ export default async function RootLayout({
         </body>
       </html>
     </ClerkProvider>
-  )
+  );
 }

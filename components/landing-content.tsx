@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -50,7 +51,7 @@ export const LandingContent = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
                 <div>
-                  <img
+                  <Image
                     className="inline-block h-[2.875rem] w-[2.875rem] rounded-full"
                     src={item.avatar}
                     alt="Image Description"

@@ -1,5 +1,7 @@
 # AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe
 
+[![Watch the video](https://img.youtube.com/vi/SCy9WiVwfiQ/maxresdefault.jpg)](https://youtu.be/SCy9WiVwfiQ)
+
 Features:
 
 - Tailwind design

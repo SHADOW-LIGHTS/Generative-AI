@@ -1,6 +1,6 @@
 # AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe
 
-[![Watch the video](https://img.youtube.com/vi/SCy9WiVwfiQ/maxresdefault.jpg)](https://youtu.be/SCy9WiVwfiQ)
+https://github.com/SHADOW-LIGHTS/ai-saas-platform/assets/108618163/802c1a9d-37bc-47b2-ac7b-a025bab78039
 
 Features:
 
